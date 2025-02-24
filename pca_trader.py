@@ -187,7 +187,7 @@ def main():
     # Initialize PCA Trader with error handling
     try:
         trader = PCATrader(sectors)
-        data = trader.fetch_data('2022-01-01', '2025-02-20')
+        data = trader.fetch_data('2022-01-01', '2025-02-24')
         
         if data is not None and not data.empty:
             components = trader.calculate_pca_components()
